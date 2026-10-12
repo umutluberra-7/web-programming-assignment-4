@@ -1,4 +1,4 @@
-class Task {
+class Task {    // id is read-only to keep tasks immutable
   constructor(id, title, completed) {
     // id is read-only and cannot be changed after creation
     Object.defineProperty(this, "id", {

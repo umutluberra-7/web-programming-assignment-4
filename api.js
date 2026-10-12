@@ -1,4 +1,4 @@
-function fetchTasks() {
+function fetchTasks() {    // Simulates a server request with a 1500ms delay
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve([

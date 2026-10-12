@@ -9,7 +9,9 @@
 
 ## Challenges I Faced
 
-- Keeping state immutable: using spread, `filter` and `map` instead of `push`/`splice`.
-- Making `id` read-only with `Object.defineProperty` and noticing that `toggle()` has to create a new `Task`.
-- Re-rendering the list correctly after each event.
-- Sharing classes between multiple script files without modules.
+
+The hardest part for me was updating the task list without changing the original array directly. At first, using map and filter was a little confusing, but then I understood that they create a new array.
+
+Another challenging part was async/await. Since the tasks do not come immediately, I needed to show a loading message. I also learned how to use try/catch if an error happens.
+
+On the DOM side, using addEventListener to toggle or delete tasks when buttons are clicked was useful practice for me.
